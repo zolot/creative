@@ -1,9 +1,39 @@
 $(document).ready(function() {
 
 	$.stellar({
-		responsive: true,
-		horizontalOffset: 0
+		responsive: false,
+		horizontalOffset: 0,
+  		verticalOffset: -200
 	});
+
+	
+	$('.element-wrap').appear();
+
+	function check_appear(els) {
+		if (els.is(':appeared')) {
+			els.each(function(index) {
+				setTimeout(function(el) {
+					$(el).animate({opacity: 1}, 700);
+				}, 500*index, this);
+			});
+		}
+	}
+
+	$(document).scroll(function() {
+		check_appear($('#myths .element-wrap'));
+		check_appear($('#true .element-wrap'));
+
+	})
+
+	// $('.work-img-box').stellar({
+	// 	responsive: false,
+	// 	horizontalOffset: 0
+	// });
+
+	// $('#for-whom, #program, #brends').stellar({
+	// 	responsive: true,
+	// 	horizontalOffset: 0
+	// });
 
 	$('.popup').magnificPopup();
 

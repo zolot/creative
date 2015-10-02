@@ -60,6 +60,13 @@ section {
   font-family: "OpenSansBold", sans-serif;
   cursor: pointer;
   box-shadow: 0px 3px 15px -6px #7d7d7d;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+}
+
+.btn:hover {
+  background-color: #EB7703;
 }
 
 #form {
@@ -269,6 +276,7 @@ header .down-icon {
   color: #4d4d4d;
   vertical-align: top;
   padding: 25px;
+  opacity: 0;
 }
 
 #myths .element-wrap .icon-wrap, #true .element-wrap .icon-wrap {
@@ -322,6 +330,7 @@ header .down-icon {
   background-image: url("../img/for-whom-bg.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #for-whom h2 {
@@ -420,6 +429,7 @@ header .down-icon {
   background-color: #2d2d2d;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 #program h2 {
@@ -652,6 +662,7 @@ header .down-icon {
   padding: 140px 0 150px;
   min-height: 490px;
   box-sizing: border-box;
+  background-attachment: fixed;
 }
 
 #brends h2 {
@@ -749,6 +760,7 @@ header .down-icon {
   background: url("../img/school-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 #about-scholl h2 {
