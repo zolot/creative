@@ -648,6 +648,7 @@ header .down-icon {
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin: 0 75px;
 }
 
 #teachers .teacher-wrap .photo-wrap {
