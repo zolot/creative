@@ -637,9 +637,17 @@ header .down-icon {
   color: #454545;
 }
 
+#teachers h4 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
 #teachers .teacher-wrap {
   display: inline-block;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 #teachers .teacher-wrap .photo-wrap {
@@ -654,6 +662,42 @@ header .down-icon {
 
 #teachers .teacher-wrap .name span {
   font-family: "OpenSansSemiBold", sans-serif;
+}
+
+#teachers .teacher-wrap .descr {
+  position: absolute;
+  font-size: 16px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #10abe2;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  opacity: 0;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+#teachers .teacher-wrap .descr span {
+  display: block;
+  border-bottom: 2px #70cdee solid;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+#teachers .teacher-wrap .descr p {
+  margin-top: 85px;
+  color: #c3eaf8;
+}
+
+#teachers .teacher-wrap:hover .descr {
+  opacity: 1;
+  top: 0;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 #brends {
