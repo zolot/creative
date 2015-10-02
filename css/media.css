@@ -1,0 +1,22 @@
+@media(min-width: 1800px) {
+    #lessons {
+        min-height: 650px;
+        background-position: center
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+@media(min-width: 1600px) {
+    #result .container {
+        font-size: 22px;
+    }
+} 
+
+@media(min-width: 1920px) {
+    #result .container {
+        font-size: 24px;
+    }
+}
+

@@ -1,0 +1,647 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "OpenSansRegular", sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: #fff
+	position: relative
+	-webkit-font-smoothing: antialised
+	margin: 0
+	padding: 0
+	min-width: 1280px
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+$blue-color: #10abe2
+$dark-blue-color: #096080
+$gray-color: #6a6a6a
+$dark-gray-color: #454545
+$orange-color: #fc8a1a
+
+h1, h2, h3
+	font-family: "OpenSansBold", sans-serif
+	text-transform: uppercase
+	margin-top: 0
+h1 
+	font-size: 72px
+	color: #f4f5f9
+	margin: 20px 0
+	display: inline-block
+h2 
+	font-size: 36px
+	color: $gray-color
+	letter-spacing: 3px;
+section
+	padding: 80px 0px
+	text-align: center
+.btn
+	width: 270px
+	height: 70px
+	color: #fff 
+	display: inline-block !important
+	background-color: $orange-color
+	border: none
+	text-decoration: none
+	border-radius: 5px
+	text-align: center
+	text-transform: uppercase
+	font-size: 14px
+	line-height: 70px
+	font-family: "OpenSansBold", sans-serif
+	cursor: pointer
+	-webkit-box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+	-moz-box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+	box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+#form
+	width: 650px
+	height: 360px
+	padding-top: 65px
+	box-sizing: border-box
+	margin: 0 auto
+	text-align: center
+	background-color: #FFF
+	h2 
+		font-size: 36px
+		text-align: center
+	input
+		width: 180px
+		height: 30px
+		vertical-align: bottom
+		margin: 0 30px 45px 
+		text-indent: 10px
+	.btn 
+		width: 180px 
+		height: 45px
+		line-height: 45px
+		vertical-align: bottom
+		margin: 0 30px 45px 
+	button
+		display: none
+#thank
+	background-color: #FFF
+	padding: 40px
+	width: 650px
+	box-sizing: border-box
+	margin: 0 auto
+	text-align: center
+	p 
+		margin: 0 auto
+		color: $dark-gray-color
+
+.line 
+	margin: 0 auto 13px
+	display: block
+
+header
+	position: relative
+	text-align: center
+	.work-img-box
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 95vh
+		min-height: 700px
+		position: relative
+	.item-1, .item-3
+		.work-img-box
+			background-image: url("../img/header-bg-1.jpg")	
+	.item-2, .item-4
+		.work-img-box
+			background-image: url("../img/for-whom-bg.jpg")	
+	.owl-pagination
+		display: none
+	.owl-prev, .owl-next
+		position: absolute
+		top: 50% !important
+		margin-top: -45px !important
+		background-image: url("../img/arrows.png") !important
+		background-color: transparent !important
+		font-size: 0 !important
+		padding: 0 !important
+		width: 37px 
+		height: 61px
+		z-index: 1000
+	.owl-prev
+		left: 50% !important
+		margin-left: -565px !important
+		background-position: 0 0 !important
+	.owl-next
+		right: 50% !important
+		margin-right: -565px !important
+		background-position: 37px 0 !important
+	.wrapper
+		position: absolute
+		top: 20px
+		left: 50%
+		margin-left: -590px
+		.center-wrap
+			width: 1180px
+			margin: 0 auto
+			.logo 
+				float: left
+			.medalist-title
+				display: block 
+				margin-top: 30px
+			.contacts
+				float: right
+				div 
+					height: 28px
+				span
+					margin: 0 10px
+					line-height: 65px
+					font-size: 14px
+					color: #fff
+				a
+					i 
+						margin-left: 7px
+						color: #fff
+						font-size: 20px
+				.phone
+					font-size: 24px
+					font-family: "OpenSansBold", sans-serif
+			.medalists
+				display: inline-block
+				vertical-align: top
+				min-width: 85px
+				min-height: 75px
+				margin: 15px
+				font-size: 8.5px
+				padding: 23px 19px
+				box-sizing: border-box
+				background: url("../img/prizes-logo-left.png") no-repeat center left , url("../img/prizes-logo-right.png") no-repeat center right
+			.conception
+				font-size: 24px
+				margin: 5px 0
+			.start
+				font-size: 36px
+				margin: 25px 0
+	.left-treug
+		border: 100px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-right: 0px solid transparent;
+		border-left: 50vw solid #fff;
+		left: 0
+	.right-treug
+		border: 98px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-right: 50vw solid #fff;
+		border-left: 0 solid transparent;
+		right: 0
+	.left-treug, .right-treug
+		position: absolute
+		bottom: 0
+	.down-icon
+		position: absolute
+		bottom: -26px
+		left: 50%
+		margin-left: -32px
+
+#myths, #true
+	.element-wrap
+		width: 260px
+		display: inline-block
+		color: #4d4d4d
+		vertical-align: top
+		padding: 25px
+		.icon-wrap
+			width: 75px
+			height: 75px
+			padding: 5px 
+			box-sizing: border-box
+			border: 1px #e5e5e5 solid
+			border-radius: 1px 
+			display: inline-block
+			text-align: center
+			.icon			
+				background-image: url("../img/true-myths-sprite.png")	
+				width: 40px
+				height: 60px
+				display: inline-block
+				vertical-align: middle		
+			.icon-1
+				background-position: 4px 6px
+			.icon-2
+				background-position: -46px 5px
+			.icon-3
+				background-position: -90px 6px
+			.icon-4
+				background-position: 148px 5px
+			.icon-5
+				background-position: 105px 6px
+			.icon-6
+				background-position: 60px 6px
+
+#true
+	background-color: #f7f7f7
+
+#for-whom
+	background-image: url("../img/for-whom-bg.jpg")	
+	background-position: center
+	background-size: cover
+	h2 
+		color: #fff
+	p 
+		max-width: 1110px
+		margin: 25px auto
+	.info-wrap
+		margin-top: 65px
+		.column
+			display: inline-block
+			width: 470px
+			vertical-align: top
+			.component
+				height: 130px
+				overflow: hidden
+				.icon
+					float: left
+					width: 50px
+					height: 45px
+					background-image: url("../img/for-whom-sprite-icons.png")
+					margin-right: 15px
+				.icon-1
+					background-position: 10px 0	
+				.icon-2
+					background-position: -32px 0px
+				.icon-3
+					background-position: 108px 0
+				.icon-4
+					background-position: 192px 0
+				.icon-5
+					background-position: 150px 0
+				.icon-6
+					background-position: 64px 0
+				.text
+					width: 345px
+					float: left
+					text-align: left
+					h3 
+						font-size: 18px
+						font-family: "OpenSansSemiBold", sans-serif
+						margin-bottom: 10px
+					p 
+						color: #8a8a86
+						margin: 0
+		.start
+			font-size: 30px
+			margin: 30px auto
+			span
+				font-family: "OpenSansSemiBold", sans-serif
+
+#lessons
+	min-height: 350px
+	background-image: url("../img/lessons-bg.png")
+	background-size: 100%
+	background-repeat: no-repeat
+	background-position: center bottom
+
+#program
+	background-image: url("../img/program-bg.jpg")
+	background-size: cover
+	background-position: center
+	h2 
+		color: #fff
+	.component
+		display: inline-block
+		vertical-align: top
+		width: 28%
+		max-width: 500px
+		margin: 0 2%
+		.number-wrap
+			width: 150px;
+			height: 150px;
+			background: url("../img/diamond.png") no-repeat center
+			margin: 0 auto
+			padding-top: 110px
+			span 
+				font-size: 24px
+
+#result
+	h2 
+		margin-bottom: 70px
+	.container
+		width: 100%
+		max-width: 1920px
+		font-size: 18px
+		font-family: "OpenSansSemiBold", sans-serif
+		margin: 0 auto
+		.right-col, .left-col, .center-col
+			margin: 0 -3px
+		p 
+			text-align: left
+		.left-col
+			display: inline-block
+			width: 34.5%
+			vertical-align: top
+			.result-wrap-1
+				width: 100%
+				background-color: #096080
+				position: relative
+				text-align: left
+				p
+					display: inline-block
+					width: 41%
+					vertical-align: middle
+					margin: 0 3%
+				img 
+					display: inline-block
+					width: 50%
+					vertical-align: middle
+				.arrov-1
+					position: absolute
+					width: 5%
+					height: auto
+					top: 50%
+					right: 50%
+					margin-top: -5%
+			.result-wrap-2
+				background-color: #e8e8e8
+				color: #636363
+				img
+					width: 100%
+				p 
+					padding: 4% 8%
+					margin: 0
+					position: relative
+					.arrov-2
+						position: absolute
+						top: -29%
+						left: 50%
+						margin-left: -5%
+						width: 10%
+		.center-col
+			display: inline-block
+			width: 33.5%
+			vertical-align: top
+			.result-wrap-3
+				background-color: #096080
+				img
+					width: 100%
+				p 
+					padding: 4.3% 8%
+					margin: 0
+					position: relative
+					.arrov-3
+						position: absolute
+						top: -36%
+						left: 50%
+						margin-left: -5%
+						width: 10%
+			.result-wrap-4
+				width: 100%
+				background-color: #e8e8e8
+				color: #636363
+				position: relative
+				text-align: left
+				p
+					display: inline-block
+					width: 41%
+					vertical-align: middle
+					margin: 0 3%
+				img 
+					display: inline-block
+					width: 45%
+					vertical-align: middle
+				.arrov-4
+					position: absolute
+					width: 5%
+					height: auto
+					top: 50%
+					right: 55%
+					margin-top: -5%
+
+		.right-col
+			display: inline-block
+			width: 32%
+			vertical-align: top
+			p 
+				margin: 0
+			.result-wrap-5
+				background-color: #e8e8e8
+				padding: 15%
+				color: #636363
+			.result-wrap-6
+				background-color: #096080
+				img 
+					width: 100%
+				p
+					padding: 4% 6%
+					position: relative					
+					.arrov-6 
+						position: absolute
+						top: -36%
+						left: 50%
+						margin-left: -5%
+						width: 10%
+
+
+#teachers
+	color: #454545
+	h2
+		color: #454545
+	.teacher-wrap 
+		display: inline-block
+		text-align: center	
+		.photo-wrap
+			width: 352px
+			height: 377px
+			overflow: hidden
+		.name
+			text-transform: uppercase
+			span 
+				font-family: "OpenSansSemiBold", sans-serif			
+
+#brends
+	background: url("../img/brends-bg.jpg") no-repeat center
+	background-size: cover
+	padding: 140px 0 150px
+	h2 
+		color: #fff 
+		margin-bottom: 100px
+	img 
+		display: inline-block
+		vertical-align: middle
+		margin: 0 50px
+
+#comments
+	background-color: #f6f6f6
+	h2 
+		color: #454545
+		margin-bottom: 80px
+	.comment-wrap
+		display: inline-block
+		width: 260px
+		vertical-align: top 
+		margin: 0 25px
+		.top-wrap
+			min-height: 305px
+			.post
+				font-size: 14px
+				color: #096080
+		.name
+			font-size: 18px
+			text-transform: uppercase
+			color: #212121
+			font-family: "OpenSansBold", sans-serif
+			margin: 15px 0
+		.comment
+			color: #4d4d4d
+			line-height: 20px
+			height: 80px
+			overflow: hidden
+		.slide-toggle
+			color: #989898
+			font-size: 15px 
+			text-decoration: underline
+			cursor: pointer
+// .toggle-up
+// 	height: 100% !important
+// .toggle-down
+// 	height: 80px !important
+
+
+#price
+	h2
+		margin-bottom: 60px
+	.price-info-wrap
+		width: 647px
+		height: 283px
+		display: inline-block
+		padding: 45px 0
+		box-sizing: border-box
+		margin-bottom: 45px
+		-webkit-box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+		-moz-box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+		box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+		border-radius: 7px
+		span 
+			font-size: 75px
+			line-height: 75px
+			color: $blue-color
+			font-family: "OpenSansBold", sans-serif
+		.course
+			font-size: 45px
+			color: $dark-blue-color
+			margin: 10px 0 20px 0
+		.sale
+			color: #4d4d4d
+			font-size: 18px
+
+#about-scholl
+	background: url("../img/school-bg.jpg") 
+	background-size: cover
+	background-position: center
+	h2
+		color: #fff
+	p 
+		max-width: 1100px
+		margin: 0 auto
+	.logo 
+		margin-bottom: 35px
+	.line 
+		margin-bottom: 25px
+
+#master-classes
+	.left-col, .right-col
+		-webkit-box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+		-moz-box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+		box-shadow: 0px 3px 15px -6px rgba(125,125,125,1);
+		border-radius: 7px
+		height: 740px
+		box-sizing: border-box
+		display: inline-block
+		vertical-align: top 
+		text-align: left
+	.left-col
+		width: 420px
+		margin-right: 25px
+		padding: 80px 75px 45px
+		span
+			color: $blue-color
+			font-size: 24px
+		p 
+			color: #4d4d4d
+			font-size: 18px
+			margin-bottom: 155px
+		.saw-photo 
+			font-size: 14px
+			color: #999999
+			font-family: "OpenSansSemiBold", sans-serif
+		a 
+			color: $orange-color
+			font-size: 30px
+			margin-right: 20px
+		.btn 
+			color: #fff
+			font-size: 14px
+	.right-col
+		width: 765px
+		color: #999999
+		padding: 35px
+		h3 
+			color: $blue-color
+			text-transform: uppercase
+			font-size: 24px
+			line-height: 26px
+			margin-top: 7px
+			font-family: "OpenSansBold", sans-serif
+		span 
+			font-size: 14px
+			font-family: "OpenSansSemiBold", sans-serif
+		p 
+			font-size: 18px
+			margin: 8px 0 30px
+		ul 
+			margin: 8px 0 30px
+			padding: 0
+			li 
+				list-style-type: none
+				font-size: 18px
+	.last
+		margin-top: 80px
+
+#questions
+	background: url("../img/question-bg.jpg") 
+	background-size: cover
+	background-position: center
+	h2 
+		color: #fff
+	.line 
+		margin-bottom: 35px
+
+footer
+	background-color: #202020
+	padding: 15px 0
+	overflow: hidden
+	.center-wrap
+		width: 1180px
+		margin: 0 auto
+	.logo 
+		float: left
+	.contacts
+		float: right
+		span
+			margin: 0 10px
+			line-height: 65px
+			font-size: 14px
+			color: #c7c7c7
+			font-family: "OpenSansSemiBold", sans-serif
+			i 
+				margin-left: 7px
+				color: #fff
+				font-size: 16px
+	.up-icon
+		position: absolute
+		bottom: 60px
+		right: 30px
+		z-index: 1000
+.hidden
+	display: none
+
+.clear
+	clear: both
