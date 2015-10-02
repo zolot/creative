@@ -253,7 +253,7 @@ header .right-treug {
 
 header .left-treug, header .right-treug {
   position: absolute;
-  bottom: -4px;
+  bottom: -5px;
 }
 
 header .down-icon {
@@ -416,6 +416,8 @@ header .down-icon {
 
 #program {
   background-image: url("../img/program-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: #2d2d2d;
   background-size: cover;
   background-position: center;
 }
@@ -645,9 +647,10 @@ header .down-icon {
 }
 
 #brends {
-  background: url("../img/brends-bg.jpg") no-repeat center;
+  background: url("../img/brends-bg.jpg") center;
   background-size: cover;
   padding: 140px 0 150px;
+  min-height: 490px;
 }
 
 #brends h2 {
