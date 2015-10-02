@@ -20,3 +20,14 @@
     }
 }
 
+@media(max-width: 1280px) {
+    .left-treug {
+        border-left: 640px solid #fff !important;
+    }
+        
+    .right-treug {
+        border-right: 640px solid #fff !important;
+    }
+        
+}
+

@@ -254,7 +254,7 @@ header .right-treug {
 
 header .left-treug, header .right-treug {
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
 }
 
 header .down-icon {
