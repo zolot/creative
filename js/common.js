@@ -63,10 +63,22 @@ $(document).ready(function() {
 	var owl = $("#slider");
      
       owl.owlCarousel({
+      	loop:true,
         navigation : true,
         singleItem : true,
         autoPlay: 5000,
         transitionStyle : "fade"
+      });
+
+    var owl = $("#teachers-slider");
+     
+      owl.owlCarousel({
+      	loop:true,
+      	navText : "",
+      	items: 2,
+        navigation : true,
+		responsive: false,
+		slideSpeed: 1000
       });
 
      	$(".up-icon").mPageScroll2id({

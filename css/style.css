@@ -196,6 +196,7 @@ header .wrapper .center-wrap .medalist-title {
 
 header .wrapper .center-wrap .contacts {
   float: right;
+  text-align: right;
 }
 
 header .wrapper .center-wrap .contacts div {
@@ -223,9 +224,9 @@ header .wrapper .center-wrap .contacts .phone {
 header .wrapper .center-wrap .medalists {
   display: inline-block;
   vertical-align: top;
-  min-width: 85px;
-  min-height: 75px;
-  margin: 15px;
+  min-width: 75px;
+  min-height: 73px;
+  margin: 13px;
   font-size: 8.5px;
   padding: 23px 19px;
   box-sizing: border-box;
@@ -637,10 +638,45 @@ header .down-icon {
   color: #454545;
 }
 
+#teachers .slider-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+#teachers .slider-wrap .owl-pagination {
+  display: none;
+}
+
+#teachers .slider-wrap .owl-prev, #teachers .slider-wrap .owl-next {
+  position: absolute;
+  top: 50% !important;
+  margin-top: -45px !important;
+  background-image: url("../img/teachers-slider-arrows.png") !important;
+  background-color: transparent !important;
+  font-size: 0 !important;
+  padding: 0 !important;
+  width: 37px;
+  height: 61px;
+  z-index: 1000;
+}
+
+#teachers .slider-wrap .owl-prev {
+  left: 50% !important;
+  margin-left: -565px !important;
+  background-position: 0 0 !important;
+}
+
+#teachers .slider-wrap .owl-next {
+  right: 50% !important;
+  margin-right: -565px !important;
+  background-position: 100px 0 !important;
+}
+
 #teachers h4 {
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 #teachers .teacher-wrap {
@@ -718,7 +754,9 @@ header .down-icon {
 #brends img {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 50px;
+  margin: 0 30px;
+  height: 83px;
+  border: 1px #949494 solid;
 }
 
 #comments {
