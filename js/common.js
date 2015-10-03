@@ -75,7 +75,7 @@ $(document).ready(function() {
       owl.owlCarousel({
       	loop:true,
       	navText : "",
-      	items: 2,
+      	items: 4,
         navigation : true,
 		responsive: false,
 		slideSpeed: 1000
