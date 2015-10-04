@@ -714,7 +714,7 @@ header .down-icon {
 #teachers .slider-wrap .owl-prev, #teachers .slider-wrap .owl-next {
   position: absolute;
   top: 50% !important;
-  margin-top: -45px !important;
+  margin-top: -110px !important;
   background-image: url("../img/teachers-slider-arrows.png") !important;
   background-color: transparent !important;
   font-size: 0 !important;
