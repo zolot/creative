@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1280px;
+  overflow-x: hidden;
 }
 
 body input:focus:required:invalid,
@@ -27,7 +28,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 43px;
   color: #f4f5f9;
   margin: 20px 0;
   display: inline-block;
@@ -163,13 +164,13 @@ header .owl-prev, header .owl-next {
 
 header .owl-prev {
   left: 50% !important;
-  margin-left: -565px !important;
+  margin-left: -615px !important;
   background-position: 0 0 !important;
 }
 
 header .owl-next {
   right: 50% !important;
-  margin-right: -565px !important;
+  margin-right: -615px !important;
   background-position: 37px 0 !important;
 }
 
@@ -774,7 +775,7 @@ header .down-icon {
 
 #teachers .teacher-wrap .descr {
   position: absolute;
-  font-size: 16px;
+  font-size: 14px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -797,7 +798,7 @@ header .down-icon {
 }
 
 #teachers .teacher-wrap .descr p {
-  margin: 40px 30px 0;
+  margin: 30px 15px 0;
   color: #c3eaf8;
 }
 
