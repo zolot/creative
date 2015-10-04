@@ -84,6 +84,9 @@ $(document).ready(function() {
      	$(".up-icon").mPageScroll2id({
 		scrollSpeed : 1000
 	});
+     	$(".down-icon").mPageScroll2id({
+		scrollSpeed : 1300
+	});
 
  	$('#form').submit(function(e) {
         e.preventDefault();

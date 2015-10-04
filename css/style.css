@@ -29,13 +29,19 @@ h1, h2, h3 {
 
 h1 {
   font-size: 43px;
+  line-height: 70px;
   color: #f4f5f9;
   margin: 20px 0;
   display: inline-block;
 }
 
-h2 {
+h1 span {
   font-size: 36px;
+  text-transform: none;
+}
+
+h2 {
+  font-size: 34px;
   color: #6a6a6a;
   letter-spacing: 3px;
 }
@@ -240,7 +246,7 @@ header .wrapper .center-wrap .conception {
 }
 
 header .wrapper .center-wrap .start {
-  font-size: 36px;
+  font-size: 34px;
   margin: 25px 0;
 }
 
@@ -267,7 +273,7 @@ header .left-treug, header .right-treug {
 
 header .down-icon {
   position: absolute;
-  bottom: -26px;
+  bottom: -35px;
   left: 50%;
   margin-left: -32px;
 }
@@ -828,7 +834,6 @@ header .down-icon {
   vertical-align: middle;
   margin: 0 20px;
   height: 80px;
-  border: 1px #949494 solid;
 }
 
 #comments {
@@ -943,6 +948,7 @@ header .down-icon {
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  margin-bottom: 35px;
 }
 
 #master-classes .left-col {
@@ -1012,10 +1018,6 @@ header .down-icon {
 #master-classes .right-col ul li {
   list-style-type: none;
   font-size: 18px;
-}
-
-#master-classes .last {
-  margin-top: 80px;
 }
 
 #questions {
