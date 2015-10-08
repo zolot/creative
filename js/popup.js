@@ -1,76 +1,76 @@
 $(document).ready(function() {
 
-	$.stellar({
-		responsive: false,
-		horizontalOffset: 50,
-  		verticalOffset: -200
-	});
+    $.stellar({
+        responsive: false,
+        horizontalOffset: 50,
+        verticalOffset: -200
+    });
 
     var component_height = $('#result .component img').height();
     $('#result .container .descr').css('height', component_height);
 
-	$('.ephone').mask('+7 (999) 999-99-99');
+    $('.ephone').mask('+7 (999) 999-99-99');
 
-	$('.element-wrap').appear();
+    $('.element-wrap').appear();
 
-	function check_appear(els) {
-		if (els.is(':appeared')) {
-			els.each(function(index) {
-				setTimeout(function(el) {
-					$(el).animate({opacity: 1}, 700);
-				}, 500*index, this);
-			});
-		}
-	}
+    function check_appear(els) {
+        if (els.is(':appeared')) {
+            els.each(function(index) {
+                setTimeout(function(el) {
+                    $(el).animate({opacity: 1}, 700);
+                }, 500*index, this);
+            });
+        }
+    }
 
-	$(document).scroll(function() {
-		check_appear($('#myths .element-wrap'));
-		check_appear($('#true .element-wrap'));
+    $(document).scroll(function() {
+        check_appear($('#myths .element-wrap'));
+        check_appear($('#true .element-wrap'));
 
-	})
+    })
 
-	// $('.work-img-box').stellar({
-	// 	responsive: false,
-	// 	horizontalOffset: 0
-	// });
+    // $('.work-img-box').stellar({
+    //  responsive: false,
+    //  horizontalOffset: 0
+    // });
 
-	// $('#for-whom, #program, #brends').stellar({
-	// 	responsive: true,
-	// 	horizontalOffset: 0
-	// });
+    // $('#for-whom, #program, #brends').stellar({
+    //  responsive: true,
+    //  horizontalOffset: 0
+    // });
 
     $('.popup').magnificPopup();
 
-/*	$('.main-popup').magnificPopup();*/
-/*    $('.main-popup').magnificPopup('open');*/
+    $('.main-popup').magnificPopup();
+    $('.main-popup').magnificPopup('open');
 
-	$(".slide-toggle").click(function () {
+    $(".slide-toggle").click(function () {
 
-		var comment = $(this).parent().find(".comment");
+        var comment = $(this).parent().find(".comment");
 
-		 var curHeight = comment.height(),
-		    autoHeight = comment.css('height', 'auto').height();
-		
+         var curHeight = comment.height(),
+            autoHeight = comment.css('height', 'auto').height();
+        
 
-		if (comment.hasClass('open')) {
-			comment.animate({"height": "80px"},200);
-			$(this).text('Развернуть')
-
-
-		} else {
-			comment.height(curHeight).animate({height: autoHeight}, 200);
-			$(this).text('Свернуть')
+        if (comment.hasClass('open')) {
+            comment.animate({"height": "80px"},200);
+            $(this).text('Развернуть')
 
 
-		}
+        } else {
+            comment.height(curHeight).animate({height: autoHeight}, 200);
+            $(this).text('Свернуть')
 
-		comment.toggleClass("open");
+
+        }
+
+        comment.toggleClass("open");
       });
 
-	var owl = $("#slider");
+    var owl = $("#slider");
      
       owl.owlCarousel({
-      	loop:true,
+        loop:true,
         navigation : true,
         singleItem : true,
         autoPlay: 5000,
@@ -90,12 +90,12 @@ $(document).ready(function() {
     var owl = $("#teachers-slider");
      
       owl.owlCarousel({
-      	loop:true,
-      	navText : "",
-      	items: 4,
+        loop:true,
+        navText : "",
+        items: 4,
         navigation : true,
-		responsive: false,
-		slideSpeed: 1000
+        responsive: false,
+        slideSpeed: 1000
       });
 
       var owl = $("#master-classes-slider");
@@ -116,19 +116,19 @@ $(document).ready(function() {
         transitionStyle : "fade"
       });
 
-     	$(".up-icon").mPageScroll2id({
-		scrollSpeed : 1000
-	});
-     	$(".down-icon").mPageScroll2id({
-		scrollSpeed : 1300
-	});
+        $(".up-icon").mPageScroll2id({
+        scrollSpeed : 1000
+    });
+        $(".down-icon").mPageScroll2id({
+        scrollSpeed : 1300
+    });
 
     // function validate_email(email) {
     //     var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     //     return emailReg.test(email);
     // }   
 
- 	$('form').submit(function(e) {
+    $('form').submit(function(e) {
         e.preventDefault();
         var $form = $(this);
         if (check_form($form)) {
